@@ -287,7 +287,6 @@ button:hover {
 .benefits {
   background-color: hsl(120, 14%, 48%);
   margin-top: 30px;
-  padding: 20px 0;
 }
 
 .benefits>.container>h1 {
@@ -304,6 +303,7 @@ button:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .informationSpotlight>div {
