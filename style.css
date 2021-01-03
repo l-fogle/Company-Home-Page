@@ -343,15 +343,6 @@ button:hover {
 }
 
 @media(max-width: 1024px) {
-  /*.informationSpotlight {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }*/
-
   .informationSpotlight>div {
     width: 300px;
   }
