@@ -156,10 +156,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: hsl(228, 26%, 96%);
 }
 
 .logo {
@@ -427,7 +423,7 @@ input:active, input:focus {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-  .photo-hero-text, .teaserBoxes {
+  .teaserBoxes {
     flex-direction: column;
   }
 
@@ -439,6 +435,15 @@ input:active, input:focus {
 @media(min-width: 768px) {
   .nav-mobile, .nav-mobile li {
     display: none;
+  }
+}
+
+@media(min-width: 1024px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(228, 26%, 96%);
   }
 }
 
