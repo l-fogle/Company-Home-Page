@@ -425,17 +425,17 @@ input:active, input:focus {
 
 /* Mobile */
 
-@media(max-width: 768px) {
-  .teaserBoxes {
-    flex-direction: column;
-  }
-
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .nav-links, .cta {
     display: none;
   }
+
+  .teaserBoxes {
+    flex-direction: column;
+  }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 768px) {
   .nav-mobile, .nav-mobile li {
     display: none;
   }
