@@ -144,50 +144,66 @@ b, strong {
   font-weight: 700;
 }
 
-/* Site Navigation */
-
-header li, header a, header button {
-  font-family: 'Cabin', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-}
-
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-  width: 60px;
-  height: auto;
-}
-
-.nav-links {
+li {
   list-style: none;
 }
 
-.nav-links>li {
-  display: inline-block;
-  padding: 0px 20px;
+/* Site Navigation */
+
+.site-header {
+  padding: 30px 15px 0;
 }
 
-.nav-links>li>a {
-  transition: all 0.3s ease 0s;
-  color: hsl(0, 0%, 0%);
+.site-header-nav {
+  align-items: center;
+  display: flex;
 }
 
-.nav-links>li>a:hover {
+.site-nav-left, .site-nav-right {
+  align-items: center;
+  display: flex;
+}
+
+.site-nav-right {
+  float: right;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.site-nav-right li a:hover {
   color: hsl(0, 0%, 50%);
 }
 
-.nav-mobile {
+.site-nav-left li:not(:first-child), .site-nav-right li {
+  font-weight: 700;
+  display: none;
+  line-height: 0;
+}
+
+.site-nav-mobile li {
   display: inline-block;
-  list-style: none;
+}
+
+@media(min-width: 768px) {
+  .site-nav-left li:not(:first-child), .site-nav-right li {
+      display: inline-block;
+  }
+
+  .site-nav-mobile, .site-nav-mobile li {
+      display: none;
+  }
+}
+
+.site-nav-left li:not(:last-child), .site-nav-right li:not(:last-child), .site-nav-mobile li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-nav-left .logo {
+  width: 60px;
+}
+
+.site-nav-link {
+  text-decoration: none;
 }
 
 .button-secondary {
@@ -200,6 +216,7 @@ header {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 button:hover {
@@ -430,16 +447,16 @@ input:active, input:focus {
     flex-direction: column;
   }
 
-  .nav-links, .cta {
+  /*.nav-links, .cta {
     display: none;
-  }
+  }*/
 }
 
-@media(min-width: 769px) {
+/*@media(min-width: 769px) {
   .nav-mobile, .nav-mobile li {
     display: none;
   }
-}
+}*/
 
 @media(min-width: 1024px) {
   header {
