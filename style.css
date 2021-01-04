@@ -279,7 +279,7 @@ button:hover {
   color: hsl(120, 14%, 48%);
 }
 
-.container>.directions-button {
+.container .directions-button {
   display: flex;
   align-items: center;
   justify-content: center;
