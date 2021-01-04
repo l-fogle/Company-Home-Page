@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin-bottom: 15px;
   transition: font-size 0.25s ease;
+  color: hsl(0, 0%, 0%);
 }
 
 h1 {
@@ -130,6 +131,7 @@ p {
   font-size: 16px;
   line-height: 23px;
   margin: 15px 0;
+  color: hsl(0, 0%, 0%);
 }
 
 a {
@@ -208,7 +210,7 @@ button:hover {
 
 .photo-hero {
   background-color: hsl(228, 26%, 96%);
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .photo-hero-text {
@@ -252,7 +254,7 @@ button:hover {
 
 .directions>.container>h1 {
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .teaserBoxes {
@@ -269,7 +271,7 @@ button:hover {
   box-shadow: 10px 10px 4px hsl(0, 0%, 67%);
   margin: 25px;
   width: 345px;
-  padding: 30px;
+  padding: 25px;
   height: 345px;
 }
 
@@ -277,11 +279,11 @@ button:hover {
   color: hsl(120, 14%, 48%);
 }
 
-.container>.button {
+.container>.directions-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .benefits {
@@ -303,13 +305,13 @@ button:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .informationSpotlight>div {
   padding: 20px;
   width: 600px;
   height: 250px;
+  margin-bottom: 20px;
 }
 
 .informationSpotlight>div>h3, .informationSpotlight>div>p {
@@ -375,7 +377,7 @@ button:hover {
 
 .footer-email-input {
   margin-right: 2.5%;
-  width: 50% !important;
+  width: 58% !important;
 }
 
 .footer-email-button {
@@ -390,7 +392,7 @@ button:hover {
 
 @media(min-width: 768px) {
   .footer-email-input {
-        width: 57% !important;
+        width: 60% !important;
   }
     
   .footer-email-button {
@@ -452,7 +454,7 @@ input:active, input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 100px 25px;
+    padding: 125px 25px;
   }
 }
 
