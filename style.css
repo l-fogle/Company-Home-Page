@@ -425,7 +425,7 @@ input:active, input:focus {
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
   .teaserBoxes {
     flex-direction: column;
   }
@@ -435,7 +435,7 @@ input:active, input:focus {
   }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1024px) {
   .nav-mobile, .nav-mobile li {
     display: none;
   }
